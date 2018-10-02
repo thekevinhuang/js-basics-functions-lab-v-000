@@ -16,7 +16,7 @@ function calculatesFarePrice(blk1, blk2) {
   let distance = distanceTravelledInFeet(blk1, blk2)
   let fare
   let minDistance = 400
-  switch (distance){
+  switch (distance) {
     case distance < minDistance:
       fare = 0
       break
@@ -41,4 +41,3 @@ function footCalculator(blockDistance) {
 function distanceTwoBlocks(block1, block2) {
   return Math.abs(block1-block2)
 }
-
