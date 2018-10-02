@@ -8,3 +8,7 @@ function distanceFromHqInFeet(blockValue) {
   const blockSize = 264
   return distanceFromHqInBlocks(blockValue)*blockSize
 }
+
+function distanceTwoBlocks(block1, block2) {
+  return MAth.abs(block1-block2)
+}
