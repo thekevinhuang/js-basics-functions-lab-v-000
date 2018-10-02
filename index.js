@@ -30,6 +30,7 @@ function calculatesFarePrice(blk1, blk2) {
       fare = (distance - minDistance)*.02
       break
   }
+  return fare
 }
 
 function footCalculator(blockDistance) {
@@ -40,3 +41,4 @@ function footCalculator(blockDistance) {
 function distanceTwoBlocks(block1, block2) {
   return Math.abs(block1-block2)
 }
+
