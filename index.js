@@ -15,7 +15,7 @@ function distanceTravelledInFeet(blk1, blk2) {
 function calculatesFarePrice(blk1, blk2) {
   let distance = distanceTravelledInFeet(blk1, blk2)
   let fare
-  let minDistance = 400
+  const minDistance = 400
 
   switch (distance) {
     case distance <= minDistance:
@@ -27,7 +27,7 @@ function calculatesFarePrice(blk1, blk2) {
     case distance > 2000:
       fare = 25;
       break;
-    case distance >minDistance:
+    case distance > minDistance:
       fare = (distance - minDistance)*.02;
       break;
   }
