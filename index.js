@@ -18,7 +18,7 @@ function calculatesFarePrice(blk1, blk2) {
   const minDistance = 400
 
   switch (distance) {
-    case distance <= minDistance:
+    case distance < minDistance:
       fare = 0;
       break;
     case distance > 2500:
