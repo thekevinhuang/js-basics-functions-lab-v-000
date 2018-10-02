@@ -4,7 +4,7 @@ function distanceFromHqInBlocks(blockValue) {
   return Math.abs(hqStreet-blockValue)
 }
 
-function distanceTravelledInFeet(blockValue) {
+function distanceFromHqInFeet(blockValue) {
   const blockSize = 264
   return distanceFromHqInBlocks(blockValue)*blockSize
 }
