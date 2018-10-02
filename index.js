@@ -28,8 +28,8 @@ function calculatesFarePrice(blk1, blk2) {
       fare = 25;
       break;
     default:
-      fare = (distance - minDistance)*.02
-      break
+      fare = (distance - minDistance)*.02;
+      break;
   }
   return fare
 }
