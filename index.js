@@ -9,6 +9,12 @@ function distanceFromHqInFeet(blockValue) {
   return distanceFromHqInBlocks(blockValue)*blockSize
 }
 
+function footCalculator(blockDistance) {
+  const blockSize = 264
+  return blockDistance*blockSize
+}
+
 function distanceTwoBlocks(block1, block2) {
   return Math.abs(block1-block2)
 }
+
