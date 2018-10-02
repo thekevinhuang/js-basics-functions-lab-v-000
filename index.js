@@ -27,7 +27,7 @@ function calculatesFarePrice(blk1, blk2) {
     case distance > 2000:
       fare = 25;
       break;
-    default:
+    case distance >minDistance:
       fare = (distance - minDistance)*.02;
       break;
   }
