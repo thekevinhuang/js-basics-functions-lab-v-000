@@ -22,11 +22,11 @@ function calculatesFarePrice(blk1, blk2) {
       fare = 0;
       break;
     case distance > 2500:
-      fare = "cannot travel that far"
-      break
+      fare = "cannot travel that far";
+      break;
     case distance > 2000:
-      fare = 25
-      break
+      fare = 25;
+      break;
     default:
       fare = (distance - minDistance)*.02
       break
