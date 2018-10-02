@@ -12,6 +12,26 @@ function distanceTravelledInFeet(blk1, blk2) {
   return footCalculator(distanceTwoBlocks(blk1, blk2))
 }
 
+function calculatesFarePrice(blk1, blk2) {
+  let distance = distanceTravelledInFeet(blk1, blk2)
+  let fare
+  let minDistance = 400
+  switch (distance){
+    case distance < minDistance:
+      fare = 0
+      break
+    case distance >2500:
+      fare = "cannot travel that far"
+      break
+    case distance >2000:
+      fare = 25
+      break
+    default:
+      fare = (distance - minDistance)*.02
+      break
+  }
+}
+
 function footCalculator(blockDistance) {
   const blockSize = 264
   return blockDistance*blockSize
