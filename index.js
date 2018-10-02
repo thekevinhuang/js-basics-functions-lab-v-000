@@ -5,8 +5,7 @@ function distanceFromHqInBlocks(blockValue) {
 }
 
 function distanceFromHqInFeet(blockValue) {
-  const blockSize = 264
-  return distanceFromHqInBlocks(blockValue)*blockSize
+  return footCalculator(distanceFromHqInBlocks(blockValue))
 }
 
 function footCalculator(blockDistance) {
@@ -17,4 +16,3 @@ function footCalculator(blockDistance) {
 function distanceTwoBlocks(block1, block2) {
   return Math.abs(block1-block2)
 }
-
